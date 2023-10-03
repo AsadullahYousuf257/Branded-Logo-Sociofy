@@ -1,0 +1,932 @@
+/*
+Theme Name: Branded Logo
+Theme URI: https://mysociofy.com
+Author: Sociofy
+Author URI: https://mysociofy.com
+Description: We go beyond with Sociofy limits to give Your Business a Magnificent Individuality!
+Template: 
+Version: 1
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+Text Domain: mybrandedlogo
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.cdnfonts.com/css/inter');
+@import url('https://fonts.cdnfonts.com/css/nunito');
+@import url('https://fonts.cdnfonts.com/css/nunito');
+
+:root {
+    --custom-orange: #FF6E31;
+    --custom-blue: #243763;
+    --white: #fff;
+  }
+
+
+/* Header */
+.container-fluid.bg-colored, section.hero-sec, section.breadcrumb-custom {
+    background-color: #FFFBFA;
+}
+
+nav.navbar.navbar-expand-lg {
+    width: 80%;
+    margin: auto;
+    /* background-color: #000 !important; */
+}
+nav.navbar.navbar-expand-lg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.nav-link {
+    color: #1F2E36 !important;
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 400;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0 {
+    margin-left: 110px;
+}
+a.nav-link {
+    padding: 15px 30px !important;
+}
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0 {
+    margin-left: 80px;
+}
+a.navbar-brand.main-logo img {
+    width: 250px;
+}
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    background-color: var(--custom-orange);
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+    border-radius: 15px;
+    border: 0px;
+    width: 175px;
+}
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    filter: drop-shadow(9px 12px 30px rgba(48, 48, 48, 0.22));
+}
+button.btn.btn-outline-success.my-2.my-sm-0:hover {
+    border: 2px solid #FF6E31;
+    background-color: transparent;
+    color: var(--custom-orange);
+}
+/* Header End */
+.background-img {
+    background-color: #FFFBFA;
+    padding: 20px;
+}
+.hero-sec{
+padding: 30px;
+}
+h1.first-heading {
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--custom-blue);
+    font-family: 'Raleway';
+}
+.hero-para{
+    color: #444;
+    font-family: 'Inter';
+}
+.hero-para-2{
+    color: #67748E;
+    font-family: 'Nunito'
+}
+.orange-text{
+    color:#fff;
+    background-color: var(--custom-orange);
+    padding: 5px;
+}
+.heading {
+    margin: auto;
+}
+img.logo-img {
+    width: 600px;
+}
+
+img.logo-makers {
+    margin: 20px 0px;
+}
+h3.logo-makers {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 800;
+}
+span.number {
+    color: var(--custom-orange);
+    font-weight: 600;
+    font-family: 'Raleway';
+    font-size: 30px;
+}
+span.call-for-qoutation a {
+    font-size: 22px;
+    color: var(--custom-blue);
+    font-weight: 400;
+    margin-left: 17px;
+    font-family: 'Raleway';
+    padding: 16px;
+    border-radius: 11px;
+    border: 1px solid #FF6E31;
+}
+span.call-for-qoutation a:hover {
+    font-size: 22px;
+    color: #fff;
+    background-color: var(--custom-orange);
+    border-radius: 11px;
+    border: 1px solid #FF6E31;
+    text-decoration: none;
+}
+.left-img-sec{
+    padding: 50px 0px;
+}
+.custom-width{
+    width: 100%;
+}
+section.portfolio {
+    padding: 80px 0px;
+    background-image: url('hero-base.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1.portfolio-first-heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    color: var(--white);
+    font-family: 'Raleway';
+}
+span.orange-text.remove-bg {
+    background-color: transparent;
+    color: var(--custom-orange);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Raleway';
+  }
+  .tab button, .active-tabs {
+    padding: 10px 70px;
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 10px;
+    border: 0px !important;
+
+}
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: #fff;
+    border: 1px solid #FF6E31;
+    border-radius: 10px;
+    
+    
+
+}
+button.tablinks:hover{
+    border: 2px solid #FF6E31 !important;
+}
+  /* Create an active/current tablink class */
+  .tab button.active-tabs {
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #FF6E31;
+    border-radius: 10px;
+    background-color: var(--custom-orange);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+
+
+
+
+.offer-include{
+    background-color:#000;
+    padding: 70px;
+}
+img.offer-logo {
+    width: 350px;
+}
+img.vector {
+    float: left;
+}
+h3.vector-title {
+    font-family: 'Raleway';
+    color: #252F40;
+    font-size: 21px;
+    margin-left: 22px;
+    font-weight: bold;
+}
+.col-md-4.round-edges {
+    padding: 23px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0px 8px;
+    justify-content: center;
+    width: 31% ;
+    max-width: 31% ;
+}
+
+
+section.left-img-sec {
+    background-color: #f5f5f5;
+}
+.offering-two-container{
+    padding: 60px 0px;
+    background-color: #f5f5f5;
+}
+.cloud {
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/Group-996.png");
+    background-size: cover;
+    padding: 84px 0px 171px;
+    background-repeat: no-repeat;
+}
+.cloud-title {
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    padding-top: 70px;
+}
+p.cloud-para {
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Nunito"';
+}
+.call-for-qoutation-offer{
+    font-size: 27px;
+    color: var(--custom-blue);
+    font-weight: 400;
+    margin-top: 17px;
+    font-family: 'Raleway';
+}
+img.offer-img {
+    margin-top: 20px;
+    width: 40px;
+    margin-bottom: 20px;
+}
+h4.offer-title-service {
+    font-family: 'Raleway';
+    color: var(--custom-blue);
+    font-weight: 700;
+    font-size: 23px;
+}
+p.offer-para {
+    font-family: 'Raleway';
+    color:var(--custom-blue);
+    font-weight: 400;
+    font-size: 17px;
+}
+h2.service-offer {
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 51px;
+}
+p.service-offer-para {
+    color: #67748E;
+    font-size: 16px;
+}
+/* .service-offer-div{
+    padding:50px;
+} */
+section.testimonials, .get-started{
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.get-started .col-md-12{
+    background-color: var(--custom-orange);
+    padding: 50px;
+    border-radius: 19px;
+}
+.get-started-title{
+    text-align: center;
+    color: var(--white);
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: 800;
+
+}
+p.get-started-para {
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 20px;
+    margin-top: 15px;
+}
+.outline:hover {
+    border: 2px solid #fff;
+    background-color: #fff !important;
+    color: var(--custom-orange);
+}
+.cloud-title {
+    color: #fff !important;
+}
+.outline {
+    margin-left: auto;
+    display: block !important;
+}
+p.get-started-para {
+    margin-bottom: 50px;
+}
+.outline {
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+    border-radius: 15px;
+    width: 175px;
+    border: 1px solid #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2.service-offer.align-center {
+    color: #243763;
+    text-align: center;
+}
+h2.service-offer{
+    color: #243763;
+}
+.col-md-4.testimonial-round-edges {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 19px;
+    margin: 10px 12px;
+    width: 31%;
+    max-width: 31%;
+    border: 1px solid #dddd;
+}
+h6.testimonial-title {
+    font-weight: 800;
+    font-family: 'Raleway';
+}
+span.redtext-service-offer{
+    color: var(--custom-orange);
+}
+img.service-offer-img {
+    width: 352px;
+    margin-bottom: 16px;
+}
+.col-md-6.service-column {
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    padding: 20px;
+   
+}
+.service-column:hover {
+    box-shadow: 27.6652px 27.6652px 80.4807px rgb(0 0 0 / 10%);
+}
+img.palceholder {
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
+    width: 77px;
+    margin-bottom: 16px;
+}
+h5.service-offer-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+p.service-offer-description {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    color: #798196;
+    text-align: center;
+}
+section.logos {
+    display: flex;
+    background-color: #ff6e31 !important;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+img.logos-sec {
+    width: 100%;
+}
+img.brand {
+    width: 100%;
+}
+.row {
+    align-items: center;
+}
+
+
+/* Footer */
+
+footer .container-fluid.footer{
+   
+    background-image: linear-gradient(180deg, #243763 0%, #03143A 100%);
+}
+/* .copyright{
+    background-image: linear-gradient(180deg, #243763 0%, #03143A 100%);
+} */
+/* .container-fluid.footer {
+    padding: 55px 0px 0px 0px;
+} */
+p.footer-para {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18x;
+    color: var(--white);
+}
+.footer-links {
+    padding: 89px 0px 0px 58px;
+}
+h4.footer-headings {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.33px;
+    color: var(--white);
+}
+a.uppar-anchor {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+}
+li.inner-li {
+    padding: 10px 0px;
+}
+ul.footer-inner-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a.uppar-anchor:hover {
+    text-decoration: none;
+    color: var(--custom-orange);
+}
+.work {
+    padding-left: 77px !important;
+}
+.container-fluid.footer {
+
+  
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+p.copyright-txt {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white);
+    margin: 0px !IMPORTANT;
+    margin-top: 46px !IMPORTANT;
+    text-align: center;
+}
+
+/* Profesional Page */
+.branded-logo .col-md-3 {
+    margin: 7px 5px;
+    border: 1px solid #F1F3ED;
+    padding: 17px !IMPORTANT;
+    border-radius: 10px;
+    width: 23%;
+    max-width: 24%;
+}
+.branded-logo .col-md-3:hover {
+    box-shadow: 29.00649px 4.83442px 116.02597px 0px rgba(119, 119, 119, 0.25);
+}
+section.branded-logo {
+    margin-top: 70px;
+}
+.container-fluid.black-bg {
+    background-color: #FFFBFA;
+    padding: 65px 223px;
+    text-align: center;
+}
+.design-img {
+    width: 123%;
+}
+.row.margin {
+    position: relative;
+    top: -25px;
+}
+.container.laucnh-your-business-online {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+h2.business-and-trade.The-Benefit {
+    text-align: center;
+}
+h2.business-and-trade.The-Benefit-inner {
+    font-size: 21px;
+}
+.page-id-11 section.testimonials, .get-started {
+    background-color: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.col-md-8.bg-orange {
+    background-color: var(--custom-orange);
+    padding-left: 55px !important;
+    border-radius: 14px;
+}
+.container.professional-service {
+    background-image: linear-gradient(180deg, #243763 0%, #03143A 100%);
+    border-radius: 20px;
+}
+.container.professional-service {
+    padding: 0px 80px;
+}
+h1.professional-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59.83px;
+    color: var(--custom-blue);
+}
+span.professional-title-red-text {
+    color: var(--custom-orange);
+}
+.container.professional-service {
+    padding: 0px 80px;
+    margin-top:160px
+}
+h1.professional-page-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50.36px;
+    color:#1D2B4F;
+    /* text-align: center; */
+    text-transform: capitalize;
+}
+/* .container.professional-service {
+    padding: 60px 0px;
+} */
+span.professional-red {
+    color: var(--custom-orange);
+}
+
+p.professional-page-para {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1202px;
+    color: #798196;
+    margin-top: 20px;
+}
+img.professional-page-img {
+    width: 455px;
+    height: 655px;
+    margin-top: -130px;
+}
+.core-values {
+    padding: 60px;
+}
+.right{
+    width: 100%;
+}
+section.img-right.orange-bg{
+    background-image: url("Container.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h2.business-and-trade {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 51.36px;
+    text-transform: capitalize;
+    color:var(--custom-blue)
+}
+h4.professional-logo-title-service {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+}
+h4.professional-logo-title-service::before {
+    content: url("https://mybrandedlogo.com/wp-content/uploads/2023/09/Combined-Shape-1.png");
+    margin-right: 10px;
+}
+p.professional-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.7144px;
+    color: #ffffff;
+    padding: 0px 43px 0px 6px;
+}
+span.call-for-qoutation-offer-professional-page {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.1526px;
+}
+.col-md-6.profesional-page-btn-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* Portfolio Page */
+section.portfolios {
+    background-image: linear-gradient(180deg, #243763 0%, #03143A 100%);
+    padding: 10px 0px 65px 0px;
+}
+p.portfolio-para {
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 18px;
+    text-align: center;
+}
+.wrapper{
+	width: 100%;
+	min-height: auto;
+	margin: 20px auto;
+}
+.wrapper ul{
+	list-style: none;
+	padding: 0;
+}
+.wrapper ul:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.wrapper ul li {
+    width: calc(30% - 0px);
+    margin: 30px 15px 0;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    float: left;
+    box-shadow: 0 0px 27px 1px rgb(0 0 0 / 36%);
+    border-radius: 20px;
+}
+.wrapper ul li:nth-child(1n + 4){
+	max-height: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.wrapper .btn-area{
+	display: block;
+	background: var(--custom-orange);
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 900;
+	width: 180px;
+	line-height: 50px;
+	margin: 50px auto 0;
+	border-radius: 50px;
+    font-family: 'Raleway';
+}
+.wrapper .btn-area .btn2 {
+  display: none;
+}
+.wrapper #btnBox {
+  display: none;
+}
+.wrapper #btnBox:checked ~ ul li:nth-child(1n + 4) {
+  max-height: 1000px;
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+.wrapper #btnBox:checked ~ .btn-area .btn2 {
+  display: block;
+}
+.wrapper #btnBox:checked ~ .btn-area .btn1 {
+  display: none;
+}
+
+.logo-for-portfolio-1{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1.png");
+    background-color: #fff;
+}
+.logo-for-portfolio-2{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (2).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-3{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (3).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-4{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (4).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-5{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (5).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-6{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (6).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-7{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (7).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-8{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (8).png");
+    background-color: #fff;
+}
+.logo-for-portfolio-9{
+    background-image: url("https://mybrandedlogo.com/wp-content/themes/BrandedLogo/assets/1 (9).png");
+    background-color: #fff;
+}
+
+
+/* Service Page */
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: inherit;
+}
+.col-md-3.even {
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--custom-blue);
+}
+h2.order-service {
+    font-family: 'Raleway';
+    font-size: 100px;
+    font-weight: 700;
+}
+.col-md-3.odd {
+    background-color: var(--custom-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--custom-blue);
+}
+.col-md-9 {
+    background-color: #F5F5F5;
+    padding: 24px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+
+h3.services-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 31px;
+}
+p.services-para {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 17px;
+}
+section.breadcrumb-custom {
+    padding: 70px 0px;
+}
+h1.professional-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 85.83px;
+    color: rgba(0, 0, 0, 0.10);
+    text-align: center;
+    filter: blur(3.5px);
+}
+.custom-collapse {
+    color: #20335e !important;
+    filter: blur(0px) !important;
+    font-size: 50px !IMPORTANT;
+    font-weight: 800 !important;
+    margin-top: -6%;
+}
+section.define-services {
+    padding: 60px 0px;
+}
+img.service-img {
+    width: 78px;
+    float: left;
+    margin-right: 20px;
+}
+h4.services-title {
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    color: var(--custom-orange);
+}
+p.inner-services-para {
+    color: #333333;
+    font-family: 'Raleway';
+    font-size: 17px;
+}
+.inner-services-text {
+    margin: 90px 0px;
+}
+section.column-services {
+    background-color: #ff6e31;
+    padding: 70px;
+}
+.inner-services-text-new {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 19px;
+    margin-bottom: 35px;
+}
+img.service-img-box {
+    width: 65px;
+    margin-bottom: 35px;
+}
+.innner {
+    color: #000 !important;
+}
+.new-para {
+    color: #798196 !important;
+}
+/* Contact Page */
+.col-md-6.contact-page-half {
+    padding: 38px;
+}
+input {
+    width: 100%;
+}
+input {
+    width: 100%;
+    border-radius: 10px;
+    border: 0px;
+    padding: 15px;
+}
+span.wpcf7-list-item {
+    display: grid;
+    width: 100%;
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 300 !important;
+}
+label{
+    /* font-weight: 800; */
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+input[type="checkbox"] {
+    width: 3%;
+}
+label.bolder-custom {
+    font-weight: 800;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway';
+    width: 100%;
+}
+textarea#your-message {
+    width: 100%;
+    border-radius: 10px;
+    border: 0px;
+    padding: 15px;
+    height: 130px;
+}
